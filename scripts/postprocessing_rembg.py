@@ -59,7 +59,7 @@ class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
             return
 
         if "U2NET_HOME" not in os.environ:
-            os.environ["U2NET_HOME"] = os.path.join(models_path, "u2net")
+            os.environ["U2NET_HOME"] = os.path.join("/home/ubuntu/user_data/a1111/extensions/stable-diffusion-webui-rembg", "u2net")
 
         pp.image = rembg.remove(
             pp.image,
